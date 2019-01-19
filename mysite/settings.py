@@ -141,7 +141,7 @@ AUTHENTICATION_BACKENDS = [
 
 SOCIAL_AUTH_TWITTER_KEY = 'qRMtfGvoxc0uqAtoHopvwwTzO' # Consumer Key (API Key)
 SOCIAL_AUTH_TWITTER_SECRET = 'Pi44gOtXOZI4I0eT4ZZfgp1AwqB8kQ33pwfnREbb5ie7bw5nbF' # Consumer Secret (API Secret)
-SOCIAL_AUTH_LOGIN_REDIRECT_URL = '/user/complete/twitter' # リダイレクトURL
+SOCIAL_AUTH_LOGIN_REDIRECT_URL = '/user/top' # リダイレクトURL
 
 
 LOGIN_REDIRECT_URL = '/'
