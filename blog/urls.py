@@ -4,14 +4,14 @@ from . import views
 app_name='blog'
 
 urlpatterns=[
-    path('top/',views.top_page, name="top"), # リダイレクト
-    path('login/', # ログイン
+    path('user/top/',views.top_page, name="top"), # リダイレクト
+    path('user/login/', # ログイン
          django.contrib.auth.views.login,
          {
              'template_name': 'blog/login.html',
          },
          name='login'),
-    path('logout/', # ログアウト
+    path('user/logout/', # ログアウト
          django.contrib.auth.views.logout,
          {
              'template_name': 'blog/logout.html',
