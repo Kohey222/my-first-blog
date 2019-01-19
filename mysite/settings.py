@@ -24,7 +24,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '-)*4nnux8aqyeety53pr8f@k#%qb)%0p!!%f23sw8r5pvibo&-'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['127.0.0.1', '.herokuapp.com']
 
@@ -146,3 +146,5 @@ AUTHENTICATION_BACKENDS = [
 SOCIAL_AUTH_TWITTER_KEY = 'qRMtfGvoxc0uqAtoHopvwwTzO' # Consumer Key (API Key)
 SOCIAL_AUTH_TWITTER_SECRET = 'Pi44gOtXOZI4I0eT4ZZfgp1AwqB8kQ33pwfnREbb5ie7bw5nbF' # Consumer Secret (API Secret)
 SOCIAL_AUTH_LOGIN_REDIRECT_URL = '/user/top' # リダイレクトURL
+
+LOGIN_REDIRECT_URL = '/'
