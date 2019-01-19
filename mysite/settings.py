@@ -52,7 +52,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'blog.urls'
+ROOT_URLCONF = 'project.urls'
 
 TEMPLATES = [
     {
@@ -117,9 +117,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/2.0/topics/i18n/
 
-
 LANGUAGE_CODE = 'ja'
-
 
 TIME_ZONE = 'Asia/Tokyo'
 
@@ -134,12 +132,15 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 AUTHENTICATION_BACKENDS = [
      'social_core.backends.twitter.TwitterOAuth',
      'django.contrib.auth.backends.ModelBackend',
- ]
+]
 
 SOCIAL_AUTH_TWITTER_KEY = 'qRMtfGvoxc0uqAtoHopvwwTzO' # Consumer Key (API Key)
 SOCIAL_AUTH_TWITTER_SECRET = 'Pi44gOtXOZI4I0eT4ZZfgp1AwqB8kQ33pwfnREbb5ie7bw5nbF' # Consumer Secret (API Secret)
 SOCIAL_AUTH_LOGIN_REDIRECT_URL = '/user/top' # リダイレクトURL
+
+LOGIN_REDIRECT_URL = '/'
