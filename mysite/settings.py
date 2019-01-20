@@ -13,6 +13,8 @@ https://docs.djangoproject.com/en/2.0/ref/settings/
 import os
 import dj_database_url
 
+
+
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -141,4 +143,4 @@ AUTHENTICATION_BACKENDS = [
 
 SOCIAL_AUTH_TWITTER_KEY = 'qRMtfGvoxc0uqAtoHopvwwTzO' # Consumer Key (API Key)
 SOCIAL_AUTH_TWITTER_SECRET = 'Pi44gOtXOZI4I0eT4ZZfgp1AwqB8kQ33pwfnREbb5ie7bw5nbF' # Consumer Secret (API Secret)
-SOCIAL_AUTH_LOGIN_REDIRECT_URL = '/user/top' # リダイレクトURL
+SOCIAL_AUTH_LOGIN_REDIRECT_URL = '/blog/top' # リダイレクトURL
